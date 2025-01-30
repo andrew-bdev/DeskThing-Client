@@ -63,7 +63,7 @@ export default function NowPlaying() {
                 : 'text-4xl'
           }`}
         >
-          {song?.track_name?.replace(/\s*\(.*?\)|\s*\[.*?\]/g, '') || 'Waiting For Track...'}
+          {song?.track_name?.replace(/\s*\(.*?\)|\s*\[.*?/g, '') || 'Waiting For Track...'}
         </p>
         <h1 className="text-xl line-clamp-1 overflow-auto whitespace-normal flex-grow-0 opacity-75">
           {song?.album || ''}
